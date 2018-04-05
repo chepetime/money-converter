@@ -3,15 +3,14 @@
  */
 
 // Fonts Import [Google fonts]
-@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 // Imported Fonts
-$font-family-lato: 'Lato', sans-serif;
-$font-family-playfair: 'Playfair Display', serif;
+$font-family-source: 'Source Sans Pro', sans-serif;
 
 // Project Main Font
-$font-titles: $font-family-playfair;
-$font-text: $font-family-lato;
+$font-titles: $font-family-source;
+$font-text: $font-family-source;
 $font-size-base: 16px;
 $line-height-base: 1;
 
