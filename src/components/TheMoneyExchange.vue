@@ -20,7 +20,7 @@
           <div class="c-money-group__fields">
             <fieldset>
               <legend>1 MXN = JPY</legend>
-              <input type="number" name="rate" placeholder="" v-model="currency.rate">
+              <input type="number" name="rate" placeholder="" v-model="rate">
             </fieldset>
           </div>
 
@@ -60,7 +60,13 @@ import numeral from 'numeral'
 export default {
   name: 'TheMoneyExchange',
 
-  mounted () {},
+  mounted () {
+    let _rate = localStorage.rate
+
+    if (_rate) {
+      this.rate = _rate
+    }
+  },
 
   destroyed () {},
 
@@ -68,8 +74,8 @@ export default {
 
   data () {
     return {
+      rate: 0.169,
       currency: {
-        rate: 0.169,
         mxn: 1000,
         jpy: 500
       }
@@ -78,10 +84,10 @@ export default {
 
   computed: {
     jpy () {
-      return Math.floor((this.currency.mxn / this.currency.rate) * 100) / 100
+      return Math.floor((this.currency.mxn / this.rate) * 100) / 100
     },
     mxn () {
-      return Math.floor((this.currency.jpy * this.currency.rate) * 100) / 100
+      return Math.floor((this.currency.jpy * this.rate) * 100) / 100
     }
   },
 
@@ -91,6 +97,12 @@ export default {
     },
     formatPrice (value) {
       return `${numeral(value).format('$0,0.00')}`
+    }
+  },
+
+  watch: {
+    rate (val) {
+      localStorage.setItem('rate', val)
     }
   },
 
