@@ -20,6 +20,7 @@
     "node-sass": "^4.8.3",
     "numeral": "^2.0.6",
     "sass-loader": "^6.0.7",
+    "sw-precache-webpack-plugin": "^0.11.5",
     "vue": "^2.5.2",
     "vue-cleave": "^1.2.2",
     "vue-offline-preloader": "^0.0.5",
