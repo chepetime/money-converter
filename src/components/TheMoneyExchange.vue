@@ -30,7 +30,7 @@
       <!-- Money Group -->
       <div class="c-money-group">
         <div class="l-wrapper l-wrapper--mobile">
-          <p class="c-money-group__legend"><span class="flag">🇲🇽</span> Get MXN</p>
+          <p class="c-money-group__legend"><span class="flag">🇲🇽</span> Change MXN to JPY</p>
           <div class="c-money-group__fields">
             <fieldset><legend>MXN</legend><input type="number" name="mxn" placeholder="0" v-model="currency.mxn"></fieldset>
             <fieldset><legend>JPY</legend><input type="text" name="jpy" placeholder="JPY" disabled="true" :value="formatPriceJpy(jpy)"></fieldset>
@@ -41,7 +41,7 @@
       <!-- Money Group -->
       <div class="c-money-group">
         <div class="l-wrapper l-wrapper--mobile">
-          <p class="c-money-group__legend"><span class="flag">🇯🇵</span> Get JPY</p>
+          <p class="c-money-group__legend"><span class="flag">🇯🇵</span> Change JPY to MXN</p>
           <div class="c-money-group__fields">
             <fieldset><legend>JPY</legend><input type="number" name="jpy" placeholder="0" v-model="currency.jpy"></fieldset>
             <fieldset><legend>MXN</legend><input type="text" name="mxn" placeholder="MXN" disabled="true" :value="formatPrice(mxn, 'MXN')"></fieldset>
