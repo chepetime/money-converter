@@ -4,7 +4,7 @@
     <!-- Header -->
     <div class="c-header">
       <div class="l-wrapper l-wrapper--mobile">
-        <p>-Currency Converter</p>
+        <p>Currency Converter</p>
       </div>
     </div>
 
