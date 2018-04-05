@@ -6,11 +6,8 @@ import TheMoneyExchange from '@/components/TheMoneyExchange'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: TheMoneyExchange
-    }
+    { path: '/', name: 'home', component: TheMoneyExchange }
   ]
 })
