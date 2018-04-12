@@ -1,6 +1,6 @@
 {
     "name": "Traveler Wallet",
-    "short_name": "Traveler",
+    "short_name": "Traveler Wallet",
     "icons": [
         {
             "src": "/static/android-chrome-192x192.png",
