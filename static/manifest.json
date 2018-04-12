@@ -1,7 +1,7 @@
 {
-  "name": "Traveler Wallet",
-  "short_name": "Traveler Wallet",
-  "description": "PWA SPlash Screens",
+  "name": "TravelerWallet",
+  "short_name": "TravelerWallet",
+  "description": "Traveler Wallet",
   "scope": ".",
   "start_url": "/",
   "display": "standalone",
